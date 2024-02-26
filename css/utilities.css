@@ -1,0 +1,143 @@
+
+@import url("main.css");
+
+/* Heading */
+.h1 {
+    font-size: var(--fs-900);
+}
+
+.h2 {
+    font-size: var(--fs-800);
+}
+
+.h3 {
+    font-size: var(--fs-700);
+}
+
+
+.h4 {
+    font-size: var(--fs-600);
+}
+
+
+.h5 {
+    font-size: var(--fs-500);
+}
+
+.h6 {
+    font-size: var(--fs-400);
+}
+
+.paragraph {
+    font-size: var(--fs-400);
+}
+
+/* Font Weight */
+
+.fw-100 {
+    font-weight: var(--fw-100);
+}
+
+.fw-200 {
+    font-weight: var(--fw-200);
+}
+
+.fw-300 {
+    font-weight: var(--fw-300);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-500 {
+    font-weight: var(--fw-500);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+.fw-800 {
+    font-weight: var(--fw-800);
+}
+
+.fw-900 {
+    font-weight: var(--fw-900);
+}
+
+/* Container */
+.container {
+    padding: 1.25rem 1rem;
+}
+
+/* Buttons */
+.btn {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+.btn.btn-primary {
+    background: var(--clr-secondary-900);
+    color: var(--clr-primary-900);
+    transition: 300ms;
+}
+
+.btn.btn-primary:hover {
+    background: var(--clr-primary-900);
+    color: var(--clr-secondary-900);
+    border: 1px solid var(--clr-secondary-900);
+}
+
+.btn.btn-success {
+    background: var(--clr-accent-900);
+}
+
+.btn.btn-warning {
+    background: var(--clr-accent-800);
+}
+
+/* Flex Box Utilities */
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* Grid Utilities */
+.grid {
+    display: grid;
+}
+
+.even-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
