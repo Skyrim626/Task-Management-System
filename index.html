@@ -18,46 +18,137 @@
     <!-- CDJNS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Scripts -->
+    <script src="js/events.js" defer></script>
+
 </head>
 <body>
     
     <!-- Header / Navigation-->
-    <header class="navbar">
+    <header class="navbar" data-header>
         <div class="container">
-            <nav class="navbar__navigation">
+            <nav class="navbar__navigation | d-flex align-items-center justify-content-space-between">
                 <a href="#" class="navbar__nav-title | fw-500">Task Zen</a>
-                <div class="hamburger-menu">
+                <div class="hamburger-menu" data-menu>
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
-                <ul class="navbar__nav-links">
-                    <li><a href="#features">FEATURES</a></li>
-                    <li><a href="#pricing">PRICING</a></li>
-                    <li><a href="#about-us">ABOUT US</a></li>
+                <ul class="navbar__nav-links" data-menu-link>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><button class="btn btn-primary">Login</button></li>
-                    <li><button class="btn btn-secondary">Sign Up</button></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero-section">
-       <div class="container grid">
+       <div class="container">
         <div class="hero-section__hero-content">
             <h1 class="h1">Streamline Your Workflow, Boost Productivity, and Stay Organized</h1>
             <p class="paragraph">
                 Simplify task management and boost productivity with Task Zen. Centralize tasks, collaborate seamlessly, and achieve more in less time. Say goodbye to scattered to-do lists and missed deadlines.
             </p>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary-outline">
                 Get Started Today
             </button>
         </div>
-        <img src="" alt="">
+        <img src="" alt="" class="hero__hero-image">
        </div>
     </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section" id="features">
+      
+        <div class="container">
+
+            <h2 class="h2 text-center w-75 mx-auto">Powerful Features for Effortless Task Management</h2>
+            
+            <div class="feature__feature-container mt-1 grid gap-1">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Task Organization</h4>
+                    <ul class="feature_feature-list">
+                        <li>Easily organize tasks into categories, projects, or priority levels.</li>
+                        <li>Drag-and-drop functionality for effortless task management.</li>
+                        <li>Keep track of deadlines and due dates with customizable reminders.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Collaborative Workspaces</h4>
+                    <ul class="feature_feature-list">
+                        <li>Create collaborative workspaces for team projects.</li>
+                        <li>Assign tasks to team members and track progress in real-time.</li>
+                        <li>Foster communication and collaboration with built-in chat and commenting features.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Customizable Task Views</h4>
+                    <ul class="feature_feature-list">
+                        <li>Choose from various task views, including list, kanban, or calendar view.</li>
+                        <li>Customize task views based on your preferred workflow and project requirements.</li>
+                        <li>Filter and sort tasks to focus on what matters most.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-brands fa-connectdevelop"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Integration with Third-Party Tools</h4>
+                    <ul class="feature_feature-list">
+                        <li>Seamlessly integrate with popular third-party tools and applications.</li>
+                        <li>Sync tasks with calendar apps, email clients, and project management tools.</li>
+                        <li>Enhance productivity by centralizing task management across platforms.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Task Dependencies and Subtasks</h4>
+                    <ul class="feature_feature-list">
+                        <li>Define task dependencies to ensure proper sequencing and workflow management.</li>
+                        <li>Break down complex tasks into smaller subtasks for better organization.</li>
+                        <li>Visualize task relationships and dependencies to optimize project timelines.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <h4 class="feature__feature-title | h4">Analytics and Reporting</h4>
+                    <ul class="feature_feature-list">
+                        <li>Gain insights into task performance and team productivity with advanced analytics.</li>
+                        <li>Track key metrics such as task completion rates, time spent, and project milestones.</li>
+                        <li>Generate customizable reports to evaluate project progress and identify areas for improvement.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>  
+    </section>
+
+    <!-- Pricing Section -->
+
 
 </body>
 </html>

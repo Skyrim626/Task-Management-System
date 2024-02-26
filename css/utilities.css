@@ -75,6 +75,11 @@
     padding: 1.25rem 1rem;
 }
 
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
 /* Buttons */
 .btn {
     cursor: pointer;
@@ -93,6 +98,20 @@
     background: var(--clr-primary-900);
     color: var(--clr-secondary-900);
     border: 1px solid var(--clr-secondary-900);
+}
+
+.btn.btn-primary-outline {
+    border: 1px solid var(--clr-secondary-900);
+    background: var(--clr-primary-900);
+    color: var(--clr-secondary-900);
+    transition: 300ms;
+
+}
+
+.btn.btn-primary-outline:hover {
+    background: var(--clr-secondary-900);
+    color: var(--clr-primary-900);
+
 }
 
 .btn.btn-success {
@@ -134,10 +153,66 @@
 
 
 /* Grid Utilities */
+
+.feature-box {
+    padding: 1rem;
+}
+
 .grid {
     display: grid;
 }
 
+
 .even-columns {
     grid-template-columns: repeat(2, 1fr);
+}
+
+/* Gaps (Flexbox or Grid) */
+
+.gap-1 {
+    gap: 1rem;
+}
+
+/* Width Percentages */
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+/* Margins */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 1.75rem;
+}
+
+.mt-3 {
+    margin-top: 2.5rem;
+}
+
+.mt-4 {
+    margin-top: 3rem;
+}
+
+.mt-5 {
+    margin-top: 4rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
