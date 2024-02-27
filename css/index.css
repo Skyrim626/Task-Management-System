@@ -122,10 +122,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .hero-section .container {
     padding-top: 130px;
+    
   
 }
 
@@ -188,3 +190,4 @@
 .feature_feature-list {
     padding: 1rem;
 }
+

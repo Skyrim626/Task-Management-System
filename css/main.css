@@ -11,6 +11,12 @@
 
     --clr-secondary-900: #1D1D1D;
     --clr-secondary-800: #102542;
+    --clr-secondary-700: #73747e;
+
+    --clr-box-1: #68bfa1;
+    --clr-box-2: #9897e9;
+    --clr-box-3: #e9cb97;
+
 
     --bg-primary: var(--clr-primary-900);
     --bg-secondary: var(--clr-primary-800);

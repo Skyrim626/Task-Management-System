@@ -5,6 +5,8 @@
 const hamburger = document.querySelector("[data-menu]");
 const hamburgerMenu = document.querySelector("[data-menu-link]");
 
+
+
 hamburger.addEventListener('click', ()=> {
     
     if(!(hamburgerMenu.classList.contains('js-active'))) {
@@ -44,3 +46,13 @@ const firstSectionObserver = new IntersectionObserver((entries, firstSectionObse
 }, sectionOneOptions);
 
 firstSectionObserver.observe(firstSection);
+
+
+/**Dashboard Click Events */
+const body = document.querySelector("body"),
+        sidebar = body.querySelector(".sidebar"),
+      sidebarMenu = body.querySelector(".sidebar-toggle");
+      
+sidebarMenu.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+})
