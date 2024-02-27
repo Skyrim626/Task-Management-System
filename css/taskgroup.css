@@ -1,0 +1,145 @@
+
+/* Hides the number*/
+.data-number {
+    display: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+.task-group{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    */
+    align-items: center;
+    background-color: #e1e8f4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr
+
+    
+
+}
+
+
+.task-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.task-data .data {
+    /* background: gray; */
+    overflow: hidden;
+}
+
+.task-data .data .data-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.task-data .data .due-date{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.task-data .priority_level{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.priority_level .text{
+    margin-right: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    
+}
+
+.priority_level .level{
+    margin-right: 2px;
+    text-transform: uppercase;  
+    font-weight: 600;  
+    font-size: 25px;
+}
+
+.task-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.task-buttons .buttons{
+    min-width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.task-buttons .buttons .edit-button{
+    width: 40px;
+    font-size: 25px;
+
+}
+
+.task-buttons .buttons .edit-button a{
+    color: rgb(34, 139, 60);
+}
+
+.task-buttons .buttons .delete-button{
+    width: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(222, 65, 65);
+    
+}
+
+
+
+.view_task{
+    position: relative;
+    left: 250px;
+    background-color: var(--clr-primary-800);
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    margin-bottom: 40px; 
+}
+
+.add-task{
+    position: relative;
+    left: 250px;
+    background-color: var(--clr-primary-800);
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    margin-bottom: 40px; 
+}
+
+.edit-task{
+    position: relative;
+    left: 250px;
+    background-color: var(--clr-primary-800);
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    margin-bottom: 40px; 
+}
+
+

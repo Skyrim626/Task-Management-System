@@ -5,6 +5,8 @@
 
     --clr-accent-900: #7ADFBB;
     --clr-accent-800: #F87060;
+    --clr-accent-700: #dc3545;
+    --clr-accent-600: #ffc107;
 
     --clr-primary-900: #FFFFFF;
     --clr-primary-800: #F5F5F5;
@@ -95,31 +97,23 @@ a {
 @media (width > 576px) {
 
     * {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: var(--ff-primary);
     }
 
 }
 
 @media (width > 768px) {
-    * {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+    
 }
 
 @media (width > 992px) {
-    * {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    
 }
 
 @media (width > 1200px) {
-    * {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+    
 }
 
 @media (width > 1400px) {
-    * {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+    
 }
